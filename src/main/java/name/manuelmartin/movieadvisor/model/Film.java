@@ -1,13 +1,13 @@
 package name.manuelmartin.movieadvisor.model;
 
-import com.sun.tools.javac.util.List;
+import java.util.List;
 
 public class Film {
 
 	private long id;
 	private String title;
 	private String year;
-	private List<String> genres;
+	private List <String> genres;
 	
 	public Film() {}
 
