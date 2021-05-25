@@ -6,47 +6,29 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@ComponentScan(basePackages = "name.manuelmartin.movieadvisor")
-@PropertySource("classpath:movieadvisor.properties")
+@ComponentScan(basePackages="name.manuelmartin.movieadvisor")
+@PropertySource("classpath:/movieadvisor.properties")
 public class AppConfig {
-
+	
 	@Value("${file.path}")
-	private String file;
+	public String file;
 	
 	@Value("${file.csv.separator}")
-	private String separator;
+	public String separator;
 	
-	@Value("${file.csv.list.separator}")
-	private String listSeparator;
-
-	
-	
+	@Value("${file.csv.list_separator}")
+	public String listSeparator;
 	
 	public String getFile() {
 		return file;
 	}
-
-	public void setFile(String file) {
-		this.file = file;
-	}
-
+	
 	public String getSeparator() {
 		return separator;
 	}
-
-	public void setSeparator(String separator) {
-		this.separator = separator;
-	}
-
+	
 	public String getListSeparator() {
 		return listSeparator;
 	}
-
-	public void setListSeparator(String listSeparator) {
-		this.listSeparator = listSeparator;
-	}
 	
-	
-	
-
 }

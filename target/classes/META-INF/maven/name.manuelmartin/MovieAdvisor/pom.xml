@@ -12,6 +12,9 @@
 	    <artifactId>spring-context</artifactId>
 	    <version>5.0.8.RELEASE</version>
 	</dependency>
-  	
   </dependencies>
+  <properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 </project>

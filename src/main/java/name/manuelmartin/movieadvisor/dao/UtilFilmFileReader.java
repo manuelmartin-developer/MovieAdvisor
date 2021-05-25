@@ -1,4 +1,4 @@
-package name.manuelmartin.dao;
+package name.manuelmartin.movieadvisor.dao;
 
 import java.io.IOException;
 import java.nio.file.Files;
